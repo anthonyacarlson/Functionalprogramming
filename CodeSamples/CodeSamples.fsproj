@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <Deterministic Condition="'$(NCrunch)' == '1'">false</Deterministic>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FSharp.Data" Version="3.3.2" />
+    <PackageReference Include="FsUnit.xUnit" Version="3.4.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Module2\" />
+    <Folder Include="Module3\" />
+    <Compile Include="Module1\FileOrderOne.fs" />
+    <Compile Include="Module1\FileOrderTwo.fs" />
+    <Compile Include="Module1\InFileOrdering.fs" />
+    <Compile Include="Module1\Syntax.fs" />
+    <Content Include="Module4\Musicians.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Compile Include="Module4\Bindings.fs" />
+    <Compile Include="Module4\PartialApplication.fs" />
+    <Compile Include="Module4\FunctionalComposition.fs" />
+    <Compile Include="Module4\TypeProviders.fs" />
+  </ItemGroup>
+
+</Project>

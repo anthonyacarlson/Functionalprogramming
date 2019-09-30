@@ -1,0 +1,81 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/carlsona/Documents/github/Functionalprogramming/CodeSamples/CodeSamples.fsproj": {}
+  },
+  "projects": {
+    "/Users/carlsona/Documents/github/Functionalprogramming/CodeSamples/CodeSamples.fsproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/carlsona/Documents/github/Functionalprogramming/CodeSamples/CodeSamples.fsproj",
+        "projectName": "CodeSamples",
+        "projectPath": "/Users/carlsona/Documents/github/Functionalprogramming/CodeSamples/CodeSamples.fsproj",
+        "packagesPath": "/Users/carlsona/.nuget/packages/",
+        "outputPath": "/Users/carlsona/Documents/github/Functionalprogramming/CodeSamples/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/carlsona/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "FSharp.Core": {
+              "target": "Package",
+              "version": "[4.5.2, )"
+            },
+            "FSharp.Data": {
+              "target": "Package",
+              "version": "[3.3.2, )"
+            },
+            "FsUnit.xUnit": {
+              "target": "Package",
+              "version": "[3.4.1, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.2, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

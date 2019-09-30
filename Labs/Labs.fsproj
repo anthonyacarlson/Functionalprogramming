@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp2.1</TargetFramework>
+        <Deterministic Condition="'$(NCrunch)' == '1'">false</Deterministic>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Compile Remove="Module5\ListFunctionsClass.fs" />
+      <Compile Remove="Module5\MathOpsImplementation.fs" />
+      <Compile Remove="Module5\Answers\MathOpsImplementationTest.fs" />
+      <Compile Remove="Module5\Answers\ListFunctionAnswer.fs" />
+    </ItemGroup>
+    <ItemGroup>
+      <Compile Include="Module1\Answers\TuplesAnswers.fs" />
+      <Compile Include="Module1\Answers\MutabilityAnswers.fs" />
+      <Compile Include="Module1\Answers\FunctionsAnswers.fs" />
+      <Compile Include="Module1\Answers\RecordsAnswers.fs" />
+      <Compile Include="Module1\Tuples.fs" />
+      <Compile Include="Module1\Mutability.fs" />
+      <Compile Include="Module1\Functions.fs" />
+      <Compile Include="Module1\Records.fs" />
+      <Compile Include="Module2\Answers\ListOpsTestSolutions.fs" />
+      <Compile Include="Module2\ListOpsTest.fs" />
+      <Compile Include="Module3\Answers\1_DiscriminatedUnions_Answers.fs" />
+      <Compile Include="Module3\Answers\2_Options_Results_Answers.fs" />
+      <Compile Include="Module3\Answers\3_DescriminatedUnion_Advanced_Answers.fs" />
+      <Compile Include="Module3\1_DiscriminatedUnions.fs" />
+      <Compile Include="Module3\2_Options_Results.fs" />
+      <Content Include="Module3\3_DiscriminatedUnion_AdvancedDescription.md" />
+      <Compile Include="Module3\3_DiscriminatedUnion_Advanced.fs" />
+      <Compile Include="Module4\AsyncLab.fs" />
+      <Compile Include="Module4\PartialApplicationLab.fs" />
+      <Compile Include="Module4\JsonTypeProviderLab.fs" />
+      <Compile Include="Module4\Answers\AsyncAnswerLab.fs" />
+      <Compile Include="Module4\Answers\JsonTypeProviderAnswerLab.fs" />
+      <Compile Include="Module4\Answers\PartialApplicationAnswerLab.fs" />
+      <PackageReference Include="FSharp.Data" Version="3.3.2" />
+      <PackageReference Include="xunit" Version="2.4.1" />
+      <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.3.0" />
+      <PackageReference Include="FsUnit.xUnit" Version="3.4.1" />
+      <PackageReference Include="xunit.runner.visualstudio" Version="2.4.1" />
+    </ItemGroup>
+</Project>
